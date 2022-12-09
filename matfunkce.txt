@@ -1,0 +1,40 @@
+MatematickeFunkce:
+    Funkce:
+        double calc_y(double x) : hodnota funkce
+        string nazev_objektu() : označení objektu (přímka, kvadratická funkce)
+    Funkce_Primka : Funkce
+        double k
+        double q
+        String TYPE
+        Funkce_Primka(double k, double q) : constructor
+        double calc_y(double x) : y = kx + q
+        boolean equals(Funkce_Primka primka)
+        String toString() : "f(x) = kx + q"
+    Funkce_Kvadraticka: Funkce
+        double a
+        double b 
+        double c 
+        Funkce_Kvadraticka(double a, double b, double c) : constructor
+        double calc_y(double x) :  y = ax^2 + bx + c
+        int pocet_korenu() : D < 0, D > 0, D == 0
+        double diskriminant() : b^2 - 4 * a * c;
+        boolean equals(Funkce_Kvadraticka kvadraticka)
+        String toString() : "f(x) = ax^2 + bx + c"
+
+
+
+
+
+Vytvořte kolekci tříd modulu MatematickeFunkce. 
+		Definování problému: Uvažujem objekt přímky dané parametry přímky k, q a objekt kvadratick rovnice dané parametry a, b, c. Parametry jsou typu reálné číslo. Objekt přímky a objekt kvadratické rovnice umí spočítat hodnotu y pro x, resp. y = f(x).
+		a. Vytvořte abstraktní třídu Funkce s abstraktní metodou metodou double calc_y(double x) a string nazev_objektu(). První metoda má za úkol pro hodnotu x spočítát hodnoty y funkce, druhá metoda vrací označní objektu (např. přímka, kvadratická rovnice, ...).
+		b. Vytvořte třídu Funkce_Primka jako potomka třídy Funkce. Třída Funkce_Primka bude mít jako atribut směrnici přímky k a posunutí q (oba atributy typu reálné číslo double), a bude počítat hodnotu y = kx + q v metodě calc_y. 
+		Parametry přímky budou inicializovány v konstruktoru podle hodnot předanými do konstruktoru parametry. Již nepůjde měnit parametry objektu přímky. Definujte metodu equals pro porovnání objektů přímek a metodu toString poskytující 
+		stav objektu ve tvaru 'f(x) = kx + q'. Označení objektu je uložené v konstantě třídy.
+		c. Vytvořte třídu Funkce_Kvadraticka jako potomka třídy Funkce. Třída Funkce_Kvadraticka bude mít jako atribut parametry funkce a, b, c (typu reálné číslo double). V metodě calc_y bude počítat hodnotu y = ax^2 + bx + c. 
+		Parametry kvadratické funkce budou inicializovány v metodě konstruktoru. Tato třída bude mít navíc metodu vracející počet kořenů kvadratické rovnice int pocet_korenu() 
+		a metodu vracející hodnotu dikrimintantu diskriminant() : double. Definujte metodu equals pro porovnání objektů kvadratické rovnice a metodu toString vracející stav objektu ve formátu 'f(x) = ax^2 + bx + c'. 
+		Označení objektu je uložené v konstantě třídy.
+		
+		Vytvořte instance tříd a pracujte s nimi. Ověřte správnou funkčnost. 
+		Přetypujte objekt třídy na rodiče a pracujte s objektem na úrovni rodičovské třídy. 
