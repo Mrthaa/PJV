@@ -16,10 +16,6 @@ public class Main {
 
         BarvaRGB barva = new BarvaRGB((byte)152, (byte)152, (byte)152);
         System.out.print("BarvaRGB: " + barva + " ; ");
-        barva.setR((byte)202);
-        barva.setG((byte)202);
-        barva.setB((byte)202);
-        System.out.print("set(individual): " + barva + " ; ");
         barva.setRGB((byte)255,(byte)255, (byte)255);
         System.out.println("setRGB: " + barva);
 

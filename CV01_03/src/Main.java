@@ -7,15 +7,15 @@ public class Main {
     public static void main(String[] args) {
         System.out.print("Zadej short: ");
         System.out.println("Value: " + readShort());
-        System.out.println("Zadej int: ");
+        System.out.print("Zadej int: ");
         System.out.println("Value: " + readInt());
-        System.out.println("Zadej float: ");
+        System.out.print("Zadej float: ");
         System.out.println("Value: " + readFloat());
-        System.out.println("Zadej double: ");
+        System.out.print("Zadej double: ");
         System.out.println("Value: " + readDouble());
-        System.out.println("Zadej string: ");
+        System.out.print("Zadej string: ");
         System.out.println("Value: " + readString());
-        System.out.println("Zadej char: ");
+        System.out.print("Zadej char: ");
         System.out.println("Value: " + readChar());
     }
 

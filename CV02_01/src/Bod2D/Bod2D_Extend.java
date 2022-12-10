@@ -12,8 +12,8 @@ public class Bod2D_Extend extends Bod2Db {
     }
 
     public void move(double dx, double dy) {
-        this.x = dx;
-        this.y = dy;
+        setX(dx);
+        setY(dy);
     }
 
     public void setColor(BarvaRGB color) {

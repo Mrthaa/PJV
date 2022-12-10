@@ -9,18 +9,6 @@ public class BarvaRGB {
         setRGB(r,g,b);
     }
 
-    public void setR(byte v) {
-        this.r = v;
-    }
-
-    public void setG(byte v) {
-        this.g = v;
-    }
-
-    public void setB(byte v) {
-        this.b = v;
-    }
-
     public void setRGB(byte r, byte g, byte b) {
         this.r = r;
         this.g = g;

@@ -31,7 +31,7 @@ public class Main {
         System.out.printf("long\tLong\t\t%d\t\t%d <%d,%d>\n", Long.SIZE, Long.SIZE/BITS_IN_BYTE, Long.MIN_VALUE, Long.MAX_VALUE);
         System.out.printf("float\tFloat\t\t%d\t\t%d <%s,%s>\n", Float.SIZE, Float.SIZE/BITS_IN_BYTE, Float.toString(Float.MIN_VALUE), Float.toString(Float.MAX_VALUE));
         System.out.printf("double\tDouble\t\t%d\t\t%d <%s,%s>\n", Double.SIZE, Double.SIZE/BITS_IN_BYTE, Double.toString(Double.MIN_VALUE), Double.toString(Double.MAX_VALUE));
-        System.out.printf("char\tCharacter\t\t%d\t%d \n", Character.SIZE, Character.SIZE/BITS_IN_BYTE);
+        System.out.printf("char\tCharacter\t%d\t\t%d \n", Character.SIZE, Character.SIZE/BITS_IN_BYTE);
         System.out.printf("boolean\tBoolean\t\t%d\t\t%d \n", 8, Byte.SIZE/BITS_IN_BYTE);
     }
 

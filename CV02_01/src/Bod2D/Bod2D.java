@@ -2,8 +2,8 @@ package Bod2D;
 
 public class Bod2D {
 
-    protected double x;
-    protected double y;
+    private double x;
+    private double y;
 
     public Bod2D(double x, double y) {
         setLocation(x,y);

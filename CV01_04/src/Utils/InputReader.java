@@ -3,10 +3,9 @@ package Utils;
 import java.util.Scanner;
 
 public class InputReader {
+    private static final Scanner scan = new Scanner(System.in);
 
-    private final static Scanner scan = new Scanner(System.in);
-
-    public static Short readShort() {
+    public static Short readShort() throws NumberFormatException {
         try {
             return Short.parseShort(scan.nextLine());
         } catch (NumberFormatException e) {
@@ -14,7 +13,7 @@ public class InputReader {
         }
     }
 
-    public static Integer readInt() {
+    public static Integer readInt() throws NumberFormatException {
         try {
             return Integer.parseInt(scan.nextLine());
         } catch (NumberFormatException e) {
@@ -22,7 +21,7 @@ public class InputReader {
         }
     }
 
-    public static Float readFloat() {
+    public static Float readFloat() throws NumberFormatException {
         try {
             return Float.parseFloat(scan.nextLine());
         } catch (NumberFormatException e) {
@@ -30,7 +29,7 @@ public class InputReader {
         }
     }
 
-    public static Double readDouble() {
+    public static Double readDouble() throws NumberFormatException {
         try {
             return Double.parseDouble(scan.nextLine());
         } catch (NumberFormatException e) {

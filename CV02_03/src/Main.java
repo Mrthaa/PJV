@@ -1,3 +1,4 @@
+import Funkce.Funkce;
 import Funkce.Funkce_Kvadraticka;
 import Funkce.Funkce_Primka;
 
@@ -22,5 +23,18 @@ public class Main {
         System.out.println(obj4.equals(obj5));
         System.out.println(obj4.equals(obj6));
         System.out.println(obj4);
+
+        System.out.println("--------------------------");
+        Funkce fn1 = (Funkce)obj4;
+        Funkce fn2 = (Funkce)obj5;
+        Funkce fn3 = (Funkce)obj6;
+        System.out.println(fn1.calc_y(6));
+        System.out.println(fn1.nazev_objektu());
+        System.out.println(fn1.equals(fn2));
+        System.out.println(fn1.equals(fn3));
+        System.out.println(fn1);
+
+
+
     }
 }
